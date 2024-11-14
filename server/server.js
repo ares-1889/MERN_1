@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import records from "./routes/record.js";
 
-const PORT = "https://mern-1-hhq6.onrender.com"
+const PORT = process.env.PORT || 5050;
 const app = express();
 
 app.use(cors());
